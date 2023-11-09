@@ -1,0 +1,19 @@
+.image {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .image {
+    animation: image-spin infinite 20s linear;
+  }
+}
+
+@keyframes image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
